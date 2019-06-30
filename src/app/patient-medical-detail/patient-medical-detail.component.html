@@ -1,0 +1,61 @@
+
+<mat-sidenav-container
+class="example-container" (backdropClick)="close('backdrop')">
+
+<mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+<app-app-sidenav></app-app-sidenav>
+</mat-sidenav>
+
+<!-- Main Content Start -->
+<mat-sidenav-content  *ngIf="result">
+
+<div class="top-header">
+    <button mat-button class="toggle-menu" (click)="sidenav.open()"><i class="material-icons">menu</i></button>
+    <span>Patient Medical Details</span>
+    <div class="logo">
+        <div class="profileImg">
+            <span>{{ result.patient.name }}</span>
+            <span>{{ result.created | date: 'dd/MM/yyyy' }}</span>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="content-box">
+        <table class="table table-bordered table-responsive table-doc-pro">           
+            <tbody>
+                <tr>
+                    <th>Allergies</th>
+                    <td>{{ result.allergies }}</td>
+                </tr>
+                <tr>
+                    <th>Diagnosis</th>
+                    <td>{{ result.diagnosis }}</td>
+                </tr>
+                <tr>
+                    <th>Habits</th>
+                    <td>{{ result.habits }}</td>
+                </tr>
+                <tr>
+                    <th>Medicines</th>
+                    <td>{{ result.medicines }}</td>
+                </tr>
+                <tr>
+                    <th>Reason for visit</th>
+                    <td>{{ result.reason_for_visit }}</td>
+                </tr>
+                <tr>
+                    <th>Symptoms</th>
+                    <td>{{ result.symptoms }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+</mat-sidenav-content>
+</mat-sidenav-container>
+<!-- Main Content End -->
+

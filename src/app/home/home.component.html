@@ -1,0 +1,62 @@
+
+<mat-sidenav-container
+class="example-container" (backdropClick)="close('backdrop')">
+
+<mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+<app-app-sidenav></app-app-sidenav>
+</mat-sidenav>
+
+<!-- Main Content Start -->
+<mat-sidenav-content>
+
+<div class="top-header">
+    <button mat-button class="toggle-menu" (click)="sidenav.open()"><i class="material-icons">menu</i></button>
+    <span>Home</span>
+    <div class="logo">
+        <img src="assets/images/harbor-logo.png"/>
+    </div>
+</div>
+
+<div class="container-fluid mb-4">
+    <div class="content-box">
+        <div class="row">
+            <div class="col-6">
+                <a routerLink="home" class="home-menu">
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="col-6">
+                <a routerLink="my-profile" class="home-menu">
+                    <i class="material-icons">history</i>
+                    <span>My Profile</span>
+                </a>
+            </div>
+            <div class="col-6">
+                <a routerLink="book-appointments" class="home-menu">
+                    <i class="material-icons">history</i>
+                    <span>Book Appointments</span>
+                </a>
+            </div>
+            <div class="col-6">
+                <a routerLink="my-appointments" class="home-menu">
+                    <i class="material-icons">history</i>
+                    <span>My Appointments</span>
+                </a>
+            </div>
+            <div class="col-6">
+                <a routerLink="medical-history" class="home-menu">
+                    <i class="material-icons">history</i>
+                    <span>Medical History</span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+
+</mat-sidenav-content>
+</mat-sidenav-container>
+<!-- Main Content End -->
+

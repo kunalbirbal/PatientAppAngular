@@ -1,0 +1,193 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+
+
+
+body{
+    margin: 0px;
+  }
+  mat-sidenav-container{
+    min-height: 300px;
+  }
+  /* top header */
+  .top-header{
+      
+      color: #fff;
+      position: relative;
+      text-align: center;
+      background: rgba(123,134,249,1);
+  background: -moz-linear-gradient(top, rgba(123,134,249,1) 0%, rgba(117,198,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(123,134,249,1)), color-stop(100%, rgba(117,198,255,1)));
+  background: -webkit-linear-gradient(top, rgba(123,134,249,1) 0%, rgba(117,198,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(123,134,249,1) 0%, rgba(117,198,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(123,134,249,1) 0%, rgba(117,198,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(123,134,249,1) 0%, rgba(117,198,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b86f9', endColorstr='#75c6ff', GradientType=0 );
+    }
+    .top-header>span{
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-top: 15px;
+      font-weight: 500;
+      display: inline-block;
+      vertical-align: middle
+    }
+    .toggle-menu{
+        padding: 0px!important;
+        min-width: 50px!important;
+        line-height: 50px!important;
+        position: absolute!important;
+        top: 0;
+        left: 0;
+    }
+    .logo{
+      display: block;
+      text-align: center;
+      padding: 25px 0 80px;
+    }
+    .logo img{
+        max-width: 200px;
+    }
+    
+    .mat-drawer-content{
+      background: #f2f2f2;
+    }
+  
+  .content-box{
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    position: relative;
+    box-shadow :0 2px 3px -1px rgba(0,0,0,.2), 0 1px 4px 0px rgba(0,0,0,.14), 0 -1px 6px -3px rgba(0,0,0,.12);
+  }
+  
+  /* Home Page */
+  .home-menu{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background: #f6f6f6;
+    margin-bottom: 15px;
+  }
+  .home-menu i{
+    color: #fd6732;
+    font-size: 30px;
+  }
+  .home-menu span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #7a7a7a;
+  }
+  
+  /* Login Page */
+  .main-logo{display: block; text-align: center;margin-top: 50px;padding: 50px 0;}
+  .main-logo img{max-width: 200px;}
+  .loginBx{display: block; max-width: 400px; margin: 0 auto;}
+  .loginBx mat-form-field{display: block; margin-top: 15px;}
+  .loginBx .suffix-icon{font-size: 18px; color: #a2a2a2;}
+  
+  .errTxt {color: red; font-size: 14px;}
+  .loginBx .errTxt { margin-top: -20px;}
+  
+  .formBx{display: block; max-width: 400px; margin: 0 auto; padding: 15px 0; margin-top:60px;}
+  .formBx mat-form-field{display: block;}
+  .formBx .errTxt { margin-top: -20px;}
+  
+  .content-box mat-form-field{display: block;}
+  .content-box .errTxt { margin-top: -20px;}
+  
+  .pageHeading{   
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .button-row{
+    padding-top: 15px;
+      border-top: 1px solid #ccc;
+      text-align: right;
+  }
+  
+  /* Home Page */
+  .home-menu-box{
+    display: block;
+    padding: 15px;
+    text-align: center;
+    background: #f2f2f2;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2);
+    margin-bottom: 30px;
+  }
+  .home-menu-box i{
+    display: block;
+    color: #fd6732;
+    font-size: 40px;
+  }
+  .home-menu-box span{
+    display: block;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 5px;
+  }
+  
+  /* patient list */
+  .table-data .mat-table{
+    box-shadow : none!important;
+  }
+  
+  .profileImg img{
+      display: block;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      border-radius: 50%;
+      padding: 5px;
+      background: #fff;
+      box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  .profileImg span{
+      display: block;
+      text-align: center;
+      color: #fff;
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  .table-doc-pro{
+    margin-bottom: 0px;
+  }
+  
+  .patient-search{
+    display: block!important;
+      background: #fff;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ccc;;
+  }
+  .app-table td.mat-cell:first-of-type, .app-table td.mat-footer-cell:first-of-type, .app-table th.mat-header-cell:first-of-type {
+     padding-left: 0px; 
+  }
+  .app-table td.mat-cell:last-of-type, .app-table td.mat-footer-cell:last-of-type, .app-table th.mat-header-cell:last-of-type {
+    padding-right: 0px;
+  }
+  .app-table th, .app-table td{
+    padding: 5px!important;
+  }
+  
+  .vital-info-head{
+    display: block;
+      color: #333;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid #e7e4e4;
+  }
